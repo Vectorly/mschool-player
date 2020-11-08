@@ -1,0 +1,40 @@
+{
+  "name": "@dotlearn/vvid-js",
+  "version": "0.2.26",
+  "description": "Vectorized Video (.vvid) is a video file format developed by dot Learn for data-light transmission of online video lessons in low-connectivity environments.",
+  "main": "dist/vv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt build"
+  },
+  "author": "Sam Bhattacharyya",
+  "license": "MIT",
+  "devDependencies": {
+    "fs-extra": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-open": "^0.2.3",
+    "grunt-zip": "^0.17.1",
+    "jquery-browserify": "^1.8.1",
+    "node-zip": "^1.1.1"
+  },
+  "dependencies": {
+    "brace": "^0.11.0",
+    "numeric": "^1.2.6"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotLearn/vectorized-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dotLearn/vectorized-video/issues"
+  },
+  "homepage": "https://github.com/dotLearn/vectorized-video#readme"
+}

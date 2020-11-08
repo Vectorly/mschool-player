@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Vectorized Video Test</title>
+
+</head>
+<script type="application/javascript" src="filesaver.js"></script>
+<script type="application/javascript" src="vv.js"></script>
+
+<body>
+
+
+    <h1>Vectorized Video Test</h1>
+
+
+
+
+    <input  type="file" id="file" style="position: absolute; left: 50%; top: 50%; transform: translateX(-50%);" />
+
+    <div id="container">
+
+    </div>
+
+
+
+
+
+    <script type="application/javascript">
+
+
+
+
+        var oReq = new XMLHttpRequest();
+
+        oReq.onload = function(e) {
+            var arraybuffer = oReq.response;
+
+            var blob = new Blob([oReq.response], {type: "application/zip"});
+
+            vv.load(blob, "container", {
+                width: 800,
+                height:450,
+                hideControls: false,
+                fullscreen: false,
+                autoplay: false,
+                callback: function (video) {
+
+                }
+
+            });
+
+
+        };
+        oReq.open("GET", "demo.lrn");
+        oReq.responseType = "arraybuffer";
+        oReq.send();
+
+
+    </script>
+
+
+
+</body>
+
+
+<link href="main.css" rel="stylesheet"  />
+
+
+
+</html>
+
+
+
